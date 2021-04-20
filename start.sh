@@ -1,7 +1,9 @@
 #!/bin/bash
 
+VERSION="20210316"
+
 docker run --rm --name flextesa-sandbox --detach -p 20000:20000 \
-       tqtezos/flextesa:20210216 edobox start
+       tqtezos/flextesa:${VERSION} edobox start
 
 echo "Sleeping for 5s..."
 sleep 5

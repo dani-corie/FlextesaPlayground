@@ -1,4 +1,6 @@
 #!/bin/bash
 
-docker pull tqtezos/flextesa:20210216
+VERSION="20210316"
+
+docker pull tqtezos/flextesa:${VERSION}
 

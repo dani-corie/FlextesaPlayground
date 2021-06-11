@@ -1,9 +1,10 @@
 #!/bin/bash
 
-VERSION="20210316"
+VERSION="20210602"
+PROTOCOL="flobox"
 
 docker run --rm --name flextesa-sandbox --detach -p 20000:20000 \
-       tqtezos/flextesa:${VERSION} edobox start
+       tqtezos/flextesa:${VERSION} ${PROTOCOL} start
 
 echo "Sleeping for 5s..."
 sleep 5

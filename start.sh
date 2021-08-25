@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VERSION="20210602"
-PROTOCOL="flobox"
+PROTOCOL="granabox"
 
 docker run --rm --name flextesa-sandbox --detach -p 20000:20000 \
        tqtezos/flextesa:${VERSION} ${PROTOCOL} start
